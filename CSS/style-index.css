@@ -1,0 +1,124 @@
+body {
+   text-align: center;
+}
+
+h1{
+   font-family: Gentium Book Basic;
+   color: #eb4034;
+   font-size: 35px;
+   text-align: left;
+   margin-left: 100px;
+}
+
+#segundop{
+  font-weight: bold;
+  background-color:#eb4034;
+  font-size: 30px;
+  margin-left:320px;
+  margin-right:320px;
+  padding-bottom:10px;
+  padding-top:10px;
+}
+
+#legenda{
+   font-size: 8px;
+
+}
+
+figure{
+  border: thin grey solid;
+  width: 20%;
+}
+.x_imagens{
+  /*position: relative;*/
+  font-size: 11px;
+  border: thin silver solid;
+  width: 20%;
+  text-align: center; 
+}
+
+.x_imagens img{
+	width: 100%;   /*indica que a imagem se adapta à borda sempre que se aumente o zoom ou passe para um ecra maior*/
+	height: 100%;  /* '' */
+	/*top:0px;*/
+
+}
+
+
+/*Formatação do menu*/
+
+#menu{
+	display:block;   /*faz com que o menu flutue pela página*/
+	margin:auto;
+	}
+
+#menu ul{
+   list-style:none;   /*retira as marcas da lista*/
+   text-transform: uppercase;   /*coloca as letras em maiúscula*/
+   font-size:20px;
+   position: absolute;   /*para que eu possa flutuar por toda a página. A posição relativa é para flutuar dentro do seu container, da sua caixa*/
+   top: 25px;    /*distância para o topo da página*/
+   left: 850px;   /*distância desde a esquerda*/
+   
+   }
+#menu li{
+	display: inline;
+	background-color: rgb(235, 64, 52);
+	padding: 12px;    /*espaço dentro da caixa cinza --> Espaço interno*/
+	margin: 4px:    /*controla o espaço fora da caixa que tem o objeto --> Espaço externo*/
+}
+#menu li:hover{   /*o hover serve para alterar qlq coisa quando o rato passa por cima*/
+	background-color: rgba(235,64,52, 0.5);   /*altera a cor do botão quando passamos o rato por cima*/
+	text-decoration: underline;
+	/*Também se pode alterar a cor a letra, colocar underline*/
+}
+
+#menu a{   /*o menu onde tenha uma ancora (link)*/
+	color: black;  /*cor da letra do menu*/
+	text-decoration: none;   /*retirar o sublinhado*/
+}
+#tabela1{
+	border: 1px solid grey;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tabela1 td{
+	border: 1px solid grey;
+	border-spacing: 0px;
+	padding: 20px;
+	
+}
+
+/*#tabela1 td.ce{
+	texte-align: left; Alinha o texto das células à esquerda
+	
+}*/
+
+
+
+/*ul{
+   background-color: pink;
+   }
+
+li{
+display: inline;
+margin-left:5%;
+margin-right:5%;
+}*/
+
+footer{
+	border-top: 1px solid grey;
+	padding-top: 20px;
+}
+
+
+figcaption{
+
+text-align: center;
+}
+
+audio{
+	
+}

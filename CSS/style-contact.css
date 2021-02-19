@@ -1,0 +1,56 @@
+
+
+h1{
+   font-family: Gentium Book Basic;
+   color: #eb4034;
+   font-size: 35px;
+   text-align: left;
+   margin-left: 100px;
+}
+
+form{
+	width: 650px;
+	margin: auto;
+}
+
+legend{
+	font-family:Andalus;
+	font-size:15pt;
+}
+
+fieldset{
+	font-family:Andalus;
+	font-size:12pt;
+}
+
+#utilizador{
+	background: url("../imagens/contacto.png") no-repeat 95% 55%;
+}
+
+#morada{
+	background: url("../imagens/morada.jpg") no-repeat 95% 55%;
+}
+
+#frequentar{
+	background: url("../imagens/frequentar.jpg") no-repeat 95% 55%;
+}
+
+#obs{
+	background: url("../imagens/obs.jpg") no-repeat 95% 55%;
+}
+
+#Genero{
+	width: 100px;
+}
+
+input, option{
+	font-family: Andalus;
+	font-weight: normal;
+	font-size: 13pt;
+	background-color: rgba(255, 255, 255,0.8);
+}
+
+input:hover, textarea:hover{
+	background-color:#dddddd;
+	
+}

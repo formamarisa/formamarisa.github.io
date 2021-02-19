@@ -1,0 +1,43 @@
+body{
+	background-color:#faf9d2;
+	
+}
+
+h1{
+   font-family: Gentium Book Basic;
+   color: #eb4034;
+   font-size: 35px;
+   text-align: left;
+   margin-left: 100px;
+}
+
+p{
+	font-family:Arial;
+	text-align: justify;
+	text-indent:30px;
+	font-size: 20px;
+}
+
+#objetivos{
+	width:570px;
+	height:380px;
+	margin-left:180px;
+	border:none;
+	overflow: hidden;  /*remover a visualização de todo conteudo - scroll*/
+}
+
+img{
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+img#forms{
+position:absolute;
+	top:350px;
+	left:450px;
+	/*bottom:25px;*/
+}
+
+iframe#objetivos::-webkit-scrollbar{
+	display:none; /*remover a barra de scroll, mas não funciona em todos os browsers*/
+}
