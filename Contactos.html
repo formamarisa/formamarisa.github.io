@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+	<meta charset="UTF-8">
+	<title> Contactos </title>
+	<link href="CSS/style-contact.css" type="text/css" rel="stylesheet">
+	<script language="javascript" src="javascript.js"></script>
+   </head>
+
+   <body>
+	<header>
+		 <h1> Marisa - Formação: Contacte-nos!</h1>
+	</header>
+	
+	<form method="post" id="fcontacto" action="mailto:forma.marisa@gmail.com" oninput="calcula_total();">  <!área de formulário>
+		
+		<fieldset id="utilizador">   <!áreas para conjunto de campos>
+			<legend>Identificação do utilizador:</legend>
+		<p>Nome: <input type="text" name="tnome" id="cnome" size="60" maxlength="100" placeholder="Nome completo"></p>   <!t de texto, c de campo, size tamanho da caixa, maxlength: qtos caracteres pode inserir, placeholder: legenda qdo vazia>
+		<p>Password: <input type="password" name="tpassword" size="10" maxlength="10" placeholder="max 10 dígitos"></p>
+		<p>E-mail: <input type="email" name="tmail" id="cmail" size="60" maxlength="100" placeholder=""></p>   <! type="email": validar o formato e não validar o email>
+		<fieldset id="Genero"><legend>Género:</legend>
+			<input type="radio" name="tgenero" id="cmasc"> <label for="cmasc">Masculino</label><br>   <!o nome tem que ser o mesmo para se poder escolher só um>
+			<input type="radio" name="tgenero" id="cfem"> <label for="cfem">Feminino</label>       <! label para carregar no nome e marque a bolinha, for fica com o id>
+		</fieldset>	
+		<p>Data de Nascimento <input type="date" name="tnasc" id="cnasc"></p>
+		</fieldset>
+		
+		<fieldset id="morada">
+			<legend>Morada do utilizador:</legend>
+		<p>Rua: <input type="text" name="trua" id="crua" size="60" maxlength="80" placeholder="Rua, Av., Travessa, ..."></p>
+		<p>Número:<input type="number" name="tnum" id="cnum" min="0" max="99999"></p>
+		<p>Código Postal: <input type="number" name="tcp" id="ccp" min="0" max="9999"> - <input type="number" name="tnum" id="cnum" min="0" max="999"></p>
+		<p>Localidade: <input type="text" name="tlocal" id="clocal" size="60" maxlength="80" placeholder="Localidade" list="localidades"</p>
+		<datalist id="localidades">    <!para tanta localidade que existe, deve-se fazer em PHP>
+			<option value="Matosinhos"></option>
+			<option value="Maia"></option>
+			<option value="Santo Tirso"></option>
+			<option value="Trofa"></option>
+			</datalist>
+		</fieldset>
+		
+		<fieldset id="frequentar">
+			<legend>Gostaria de frequentar uma UFCD</legend>
+		<p><input type="checkbox" name="tped" id="cped" checked > <label for="cped">Gostaria de frequentar a seguinte UFCD quando disponível:</label></p>
+		
+		<p>UFCD: <select name="tufcd" id="tufcd"></p>
+			<option id="opcao">Escolha uma UFCD</option>
+			<option>0754-Processador de texto</option>
+			<option>0778-Folha de Cálculo</option>
+			<option>0780-Aplicações de Gestão Administrativa</option>
+			<option>0781-Sistemas de Informação da Empresa</option>
+			</select>
+		<p><label for="cqtd">Quantidade: </label>
+		<input type="number" name="tqtd" id="cqtd" min="0" max="99" value="0"></p>
+		<p>Preço total: <input type="text" name="ttot" id="ctot" placeholder="Total a pagar" readonly="true"></p>
+		</fieldset>
+		
+		<fieldset id="obs">
+			<legend>Observações:</legend>
+		<p>Mensagem: <textarea name="tmsg" id="cmsg" cols="45" rows="5" placeholder="Escreva a sua mensagem"></textarea></P>
+			<input type="file" />
+		</fieldset>
+		
+	<input type="submit" value="Enviar">
+	<!input type="image" name="tEnviar" src="imagens/....png">
+	
+	</form>
+
+   </body>
+</html>
